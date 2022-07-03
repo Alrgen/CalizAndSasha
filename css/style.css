@@ -1,0 +1,596 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+body{
+    background-color: #F7F0F5;
+}
+
+/* Header */
+header{
+    background-color: #E5D7C7;  
+    display: grid;
+    grid-template-columns: 50% auto auto;
+    border-bottom: 1.5px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Icono y nombre de la empresa */
+#header-icon{
+    display: flex;
+    align-items: flex-end;
+}
+
+#header-logo{
+    width: 100px;
+}
+
+#header-company-name h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2.5px solid black;
+}
+
+#header-company-name h1 span{
+    color: #AC7277;
+}
+
+#header-company-name h2{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+/* Numero de telefono y direccion de correo */
+#header-contact{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+#header-contact img{
+    width: 25px;
+}
+
+/* Redes sociales */
+#header-media{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+#header-media img{
+    width: 35px;
+    margin-left: 20px;
+}
+
+/* Menu superior */
+nav{
+    background-color: #E5D7C7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+   
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.menu li{
+    display: inline;
+    margin: 20px;
+}
+#menu-responsive-botton{
+    display: none;
+}
+
+/* Carrousel */
+.carrousel-image{
+    width: 100%;
+    height: 680px;
+}
+
+.carrousel-image img{
+    width: 100%;
+    max-height: 100%;
+}
+
+/* Buscador de propiedades */
+#browser {
+    background-color: #5C5552;
+    border-top: 2px solid #2F2523;
+}
+#browser form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-menu{
+     margin: 30px;
+}
+
+/* Slogan de la empresa */
+#slogan{
+    background-color: #2F2523;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+#slogan h1{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#slogan h2{
+    font-size: 20px;
+}
+
+/* Propiedades */
+.propiedades{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.propiedades h1{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px;
+}
+.propiedades-content{
+    display: flex;
+}
+.propiedades-grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+.propiedades-grilla-carta img{
+    width: 90%;
+}
+.menu-lateral{
+    width: 15%;
+    background-color: #E5D7C7;
+    padding: 20px;
+}
+.menu-lateral form{
+    display: flex;
+    flex-direction: column;
+}
+#menu-lateral-responsive-botton{
+    display: none;
+}
+
+/* Emprendimientos */
+.emprendimientos-slogan{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    height: 220px;
+}
+.emprendimientos-slogan div{
+    background-color: #E5D7C7;
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.emprendimientos-slogan1{
+    border-radius: 0 10px 40px 0;
+}
+.emprendimientos-slogan2{
+    border-radius: 10px 0 0 40px;
+    position: relative;
+    float: right;
+}
+
+.emprendimientos-tarjeta{
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.emprendimientos-tarjeta-imagen-cont{
+    width: 30%;
+    background-color: #D9D9D9;
+}
+.emprendimientos-tarjeta-imagen-cont img{
+    width: 100%;
+}
+.emprendimientos-tarjeta-texto{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+}
+.emprendimientos-tarjeta-texto h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.emprendimientos-tarjeta-texto h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.emprendimientos-tarjeta-texto h3{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.emprendimientos-tarjeta-texto p{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.emprendimientos-tarjeta-texto span{
+    font-size: 13px;
+    background-color: #D9D9D9;
+    margin-right: 10px;
+    padding: 4px;
+}
+
+
+/* Nosotros */
+.nosotros{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nosotros-text1{
+    background-color: #E5D7C7;
+    width: 70%;
+    padding: 40px;
+    border-radius: 0 20px 50px 0;
+    text-align: center;
+    margin-top: 30px;
+    align-self: flex-start;
+}
+.nosotros img{
+    margin-top: 30px;
+    width: 70%;
+}
+.nosotros-text2{
+    background-color: #E5D7C7;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.nosotros h1{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#nosotros-cont{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+.nosotros-servicios{
+    background-color: #E5D7C7;
+    width: 15%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+.nosotros-servicios ul{
+    margin-top: 30px;
+    text-align: justify;
+    list-style-type: "-";
+
+}
+.nosotros iframe{
+    margin-top: 30px;
+}
+
+/* Contacto */
+.contacto-formulario{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+.contacto-formulario h1{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #E5D7C7;
+    text-align: center;
+    padding: 15px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+/* Footer */
+footer{
+    background-color: #2F2523;
+    color: #F7F0F5;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 20% 30%auto auto;
+    grid-template-rows: 240px 60px 40px 30px;
+    grid-template-areas: "logo text1 media options" "contacto contacto contacto contacto" "text2 text2 text2 text2" "copyright copyright copyright copyright";
+    padding: 40px 20px 0 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F7F0F5;
+}
+#footer-logo{
+    width: 70%;
+    grid-area: logo;
+    filter: drop-shadow(11px 11px 4px rgba(208, 208, 208, 0.25));
+}
+
+#footer-text{
+    grid-area: text1;
+}
+
+#footer-media{
+    grid-area: media;
+    justify-self: center;
+}
+#footer-media img{
+    width: 50px;
+}
+
+#footer-menu{
+    grid-area: options;
+    justify-self: center;
+}
+
+#footer-contact{
+    grid-area: contacto;
+}
+#footer-text2{
+    grid-area: text2;
+}
+#copyright{
+    grid-area: copyright;
+}
+
+
+
+@media screen and (max-width: 1023px){
+
+    /*---------HEADER---------*/
+    #header-icon{
+        margin: 10px 0 10px 10px;
+    }
+    #header-icon img{
+        width: 40%;
+    }
+    #header-icon h1{
+        font-size: 25px;
+    }
+    #header-icon h2{
+        display: none;
+    }
+    #header-contact{
+        display: none;
+    }
+    #header-contact img{
+        width: 15px;
+    }
+    #header-media{
+        display: none;
+        margin-right: 0px;
+    }
+    #header-media img{
+        margin: 0px;
+    }
+    /*---------MENU--------*/
+    nav{
+        display: none;
+    }
+    #menu-responsive-botton{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #E5D7C7;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    #menu-responsive-botton img{
+        width: 50px;
+    }
+    /*-----------CARROUSEL-----------*/
+    .carrousel-image{
+        height: auto;
+    }
+    /*----------BROWSER-----------*/
+    #browser form{
+        display: grid;
+        grid-template-columns: 30% 40% auto;
+        grid-template-rows: 50px 80px;
+        grid-template-areas: "input input input" "dropdown1 dropdown2 submit";
+    }
+    .dropdown-menu{
+        margin: 0px;
+    }
+    #browser-input{
+        grid-area: input;
+    }
+    #browser-dropdown1{
+        grid-area: dropdown1;
+    }
+    #browser-dropdown2{
+        grid-area: dropdown2;
+    }
+    #browser-submit{
+        grid-area: submit;
+    }
+    /*--------SLOGAN---------*/
+    #slogan h1{
+        font-size: 20px;
+    }
+    #slogan h2{
+        font-size: 15px;
+    }
+
+    /*-----PROPIEDADES DESTACADAS--------*/
+    .propiedades h1{
+        font-size: 20px;
+    }
+    .propiedades-grilla{
+        grid-template-columns: 1fr;
+    }
+    .menu-lateral{
+        display: none;
+    }
+    #menu-lateral-responsive-botton{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #E5D7C7;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 15px;
+    }
+
+    /*------EMPRENDIMIENTOS--------*/
+    .emprendimientos-slogan{
+        font-size: 17px;
+        margin-top: 75px;
+    }
+    .emprendimientos-tarjeta{
+        flex-direction: column;
+    }
+    .emprendimientos-tarjeta-imagen-cont{
+        width: 90%;
+    }
+    .emprendimientos-tarjeta-tags{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px 10px;
+    }
+    .emprendimientos-tarjeta-texto span{
+        margin: 0px;
+        text-align: center;
+        
+    }
+    /*------NOSOTROS---------*/
+    .nosotros img{
+        width: 100%;
+    }
+    #nosotros-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros-servicios{
+        width: 90%;
+        padding: 10px;
+        margin-top: 30px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros iframe{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /*------FOOTER---------*/
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 300px 300px 50px;
+        grid-template-areas: "logo contact" "text1 options" "text2 social" "copyright copyright";
+    } 
+    #footer-logo{
+        grid-area: logo;
+        width: 90px;
+    }
+    #footer-text{
+        grid-area: text1;
+        font-size: 14px;
+    }
+    #footer-media{
+        grid-area: social;
+        font-size: 18px;
+    }
+    #footer-media li{
+        text-align: center;
+    }
+    #footer-media img{
+        width: 40px;
+        margin: 10px;
+    }
+    #footer-menu{
+        grid-area: options;
+    }
+    #footer-menu h1{
+        font-size: 18px;
+    }
+    #footer-menu li{
+        text-align: center;
+        margin: 5px;
+    }
+    #footer-contact{
+        grid-area: contact;
+        font-size: 16px;
+    }
+    #footer-text2{
+        grid-area: text2;
+        font-size: 14px;
+    }
+    #copyright{
+        grid-area: copyright;
+        border-top: 2px solid white;
+        font-size: 14px;
+        padding-top: 5px;
+    }
+}
