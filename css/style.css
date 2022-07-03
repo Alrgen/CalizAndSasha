@@ -78,6 +78,10 @@ header a {
     width: 100px;
 }
 
+#header-company-name:hover{
+    animation: header-name-bounce 2s linear 0s infinite;
+}
+
 #header-company-name h1{
     font-size: 30px;
     font-weight: bold;
@@ -115,6 +119,9 @@ header a {
 #header-media img{
     width: 35px;
     margin-left: 20px;
+}
+#header-media img:hover{
+    animation: bounce 2s linear 0s infinite;
 }
 
 /* Menu superior */
@@ -198,7 +205,20 @@ nav a{
 }
 .propiedades-grilla-carta img{
     width: 90%;
+    position: relative;
+    transition: transform 1s;
+    transition-delay: 1.25s;
 }
+/*Transiciones*/
+.propiedades-grilla-carta img:hover{
+    transform: scale(1.5);
+    z-index: 2;
+}
+.propiedades-grilla-carta img:not(:hover){
+    transition: transform 0.25s;
+    transition-delay: 0s;
+}
+
 .menu-lateral{
     width: 15%;
     background-color: #E5D7C7;
@@ -399,6 +419,40 @@ footer a {
 
 
 /*--------------ANIMACIONES-------------*/
+@keyframes bounce {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(0px, -10px);
+    }
+    50%{
+        transform: translate(0px, 0px);
+    }
+    75%{
+        transform: translate(0px, 10px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes header-name-bounce {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(0px, -10px);
+    }
+    50%{
+        transform: translate(0px, -20px);
+    }
+    75%{
+        transform: translate(0px, -10px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
 
 
 @media screen and (max-width: 1023px){
