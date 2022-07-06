@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Propiedades</title>
 </head>
 <body>
@@ -49,194 +50,164 @@
     </header>
 
     <!--Menu superior-->
-    <nav>
-        <ul class="menu">
-            <li class="menu-item"><a href="propiedades.html">PROPIEDADES</a></li>
-            <li class="menu-item"><a href="emprendimientos.html">EMPRENDIMIENTOS</a></li>
-            <li class="menu-item"><a href="nosotros.html">NOSOTROS</a></li>
-            <li class="menu-item"><a href="contacto.html">CONTACTO</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/propiedades.html">PROPIEDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/emprendimientos.html">EMPRENDIMIENTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
-    <div id="menu-responsive-botton">
-        <img src="../media/menu-icon.png" alt="">
-    </div>
 
     <section class="propiedades">
-        <h1>PROPIEDADES</h1>
-        <div id="menu-lateral-responsive-botton">
-            <span>Filtro</span>
+        <h1>PROPIEDADES DESTACADAS</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="lateral-menu col-lg-2">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-4">
+                                <label for="">Oferta</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Todo</option>
+                                    <option value="1">Venta</option>
+                                    <option value="2">Alquiler</option>
+                                    <option value="3">Alquiler Temporal</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 col-sm-4">
+                                <label for="">Tipo de Propiedad</label>
+                                <select class="form-select browser-dropbtn" aria-label="Default select example">
+                                    <option selected>Todo</option>
+                                    <option value="1">Terreno</option>
+                                    <option value="2">Departamento</option>
+                                    <option value="3">Local</option>
+                                    <option value="3">Vivienda</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 col-sm-4">
+                                <label for="">Ubicación</label>
+                                <select class="form-select browser-dropbtn" aria-label="Default select example">
+                                    <option selected>Todo</option>
+                                    <option value="1">Buenos Aires</option>
+                                    <option value="2">CABA</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="">Rango de Precio</label>
+                                <input type="range" class="form-range" min="0" max="999999">
+                            </div>
+                            <div class="col-12">
+                                <label for="">Opcional</label>
+                                <input type="text" class="form-control" placeholder="Dirección o Calle">
+                            </div>
+                            <div class="col-12">
+                                <input type="submit" class="btn btn-primary" id="lateral-menu-submit" value="Búscar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="container-fluid col-lg-10">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm propiedad">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../media/departamento-01.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Demaría 4676 - Palermo</h5>
+                                    <p class="card-text">Departamento de 3 ambientes ubicado en zona tranquila a pocas cuadras de grandes comercios. <br> <h5>USD 120.000</h5></p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm propiedad">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../media/departamento-02.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Demaría 4676 - Palermo</h5>
+                                    <p class="card-text">Departamento de 3 ambientes ubicado en zona tranquila a pocas cuadras de grandes comercios. <br> <h5>USD 120.000</h5></p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm propiedad">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../media/departamento-03.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Demaría 4676 - Palermo</h5>
+                                    <p class="card-text">Departamento de 3 ambientes ubicado en zona tranquila a pocas cuadras de grandes comercios. <br> <h5>USD 120.000</h5></p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm propiedad">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../media/departamento-01.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Demaría 4676 - Palermo</h5>
+                                    <p class="card-text">Departamento de 3 ambientes ubicado en zona tranquila a pocas cuadras de grandes comercios. <br> <h5>USD 120.000</h5></p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm propiedad">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../media/departamento-01.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Demaría 4676 - Palermo</h5>
+                                    <p class="card-text">Departamento de 3 ambientes ubicado en zona tranquila a pocas cuadras de grandes comercios. <br> <h5>USD 120.000</h5></p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm propiedad">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../media/departamento-02.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Demaría 4676 - Palermo</h5>
+                                    <p class="card-text">Departamento de 3 ambientes ubicado en zona tranquila a pocas cuadras de grandes comercios. <br> <h5>USD 120.000</h5></p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm propiedad">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../media/departamento-03.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Demaría 4676 - Palermo</h5>
+                                    <p class="card-text">Departamento de 3 ambientes ubicado en zona tranquila a pocas cuadras de grandes comercios. <br> <h5>USD 120.000</h5></p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm propiedad">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../media/departamento-01.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Demaría 4676 - Palermo</h5>
+                                    <p class="card-text">Departamento de 3 ambientes ubicado en zona tranquila a pocas cuadras de grandes comercios. <br> <h5>USD 120.000</h5></p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
-        <div class="propiedades-content">
-            <div class="menu-lateral">
-                <form action="">
-                    <select name="alquiler-venta" id="">
-                        <option value="Venta">Venta</option>
-                        <option value="Alquiler">Alquiler</option>
-                        <option value="AlquilerTemporal">Alquiler Temporal</option>
-                    </select>
-                    <select name="tipo-propiedad" id="">
-                        <option value="Departamento">Departamento</option>
-                        <option value="Local">Local</option>
-                        <option value="Almacen">Almacen</option>
-                        <option value="Vivienda">Vivienda</option>
-                    </select>
-                    <select name="Ubicación" id="">
-                        <option value="CABA">Capital Federal</option>
-                        <option value="BsAs">Provincia de Buenos Aires</option>
-                    </select>
-                    <input type="range" name="Precio" id="" min="0" max="999999">
-                    <label for="direccion">Opcional:</label>
-                    <input type="text" name="Direccion" id="" placeholder="Barrio o Calle">
-                    <input type="submit" value="Buscar">
-                    <input type="reset" value="Reiniciar Filtro">
-                </form>
-            </div>
-            <div class="propiedades-grilla">
-                <article class="propiedades-grilla-carta">
-                    <a href="#">
-                        <img src="../media/departamento-01.jpg" alt="Imagen de la propiedad">
-                    </a>
-                    <div>
-                        <span class="ambientes">Departamento de 3 ambientes</span>
-                        <span class="area">82m <sup>2</sup> </span>
-                    </div>
-                    <div class="direccion">
-                        <span> Demaría 4676 - Palermo </span>
-                    </div>
-                    <div class="precio">
-                        <span> USD 120.000 </span>
-                    </div>
-                </article>
-        
-                <article class="propiedades-grilla-carta">
-                    <a href="#">
-                        <img src="../media/departamento-02.jpg" alt="Imagen de la propiedad">
-                    </a>
-                    <div>
-                        <span class="ambientes">Departamento de 3 ambientes</span>
-                        <span class="area">82m <sup>2</sup> </span>
-                    </div>
-                    <div class="direccion">
-                        <span> Demaría 4676 - Palermo </span>
-                    </div>
-                    <div class="precio">
-                        <span> USD 120.000 </span>
-                    </div>
-                </article>
-        
-                <article class="propiedades-grilla-carta">
-                    <a href="#">
-                        <img src="../media/departamento-03.jpg" alt="Imagen de la propiedad">
-                    </a>
-                    <div>
-                        <span class="ambientes">Departamento de 3 ambientes</span>
-                        <span class="area">82m <sup>2</sup> </span>
-                    </div>
-                    <div class="direccion">
-                        <span> Demaría 4676 - Palermo </span>
-                    </div>
-                    <div class="precio">
-                        <span> USD 120.000 </span>
-                    </div>
-                </article>
-        
-                <article class="propiedades-grilla-carta">
-                    <a href="#">
-                        <img src="../media/departamento-01.jpg" alt="Imagen de la propiedad">
-                    </a>
-                    <div>
-                        <span class="ambientes">Departamento de 3 ambientes</span>
-                        <span class="area">82m <sup>2</sup> </span>
-                    </div>
-                    <div class="direccion">
-                        <span> Demaría 4676 - Palermo </span>
-                    </div>
-                    <div class="precio">
-                        <span> USD 120.000 </span>
-                    </div>
-                </article>
-        
-                <article class="propiedades-grilla-carta">
-                    <a href="#">
-                        <img src="../media/departamento-02.jpg" alt="Imagen de la propiedad">
-                    </a>
-                    <div>
-                        <span class="ambientes">Departamento de 3 ambientes</span>
-                        <span class="area">82m <sup>2</sup> </span>
-                    </div>
-                    <div class="direccion">
-                        <span> Demaría 4676 - Palermo </span>
-                    </div>
-                    <div class="precio">
-                        <span> USD 120.000 </span>
-                    </div>
-                </article>
-        
-                <article class="propiedades-grilla-carta">
-                    <a href="#">
-                        <img src="../media/departamento-03.jpg" alt="Imagen de la propiedad">
-                    </a>
-                    <div>
-                        <span class="ambientes">Departamento de 3 ambientes</span>
-                        <span class="area">82m <sup>2</sup> </span>
-                    </div>
-                    <div class="direccion">
-                        <span> Demaría 4676 - Palermo </span>
-                    </div>
-                    <div class="precio">
-                        <span> USD 120.000 </span>
-                    </div>
-                </article>
-        
-                <article class="propiedades-grilla-carta">
-                    <a href="#">
-                        <img src="../media/departamento-01.jpg" alt="Imagen de la propiedad">
-                    </a>
-                    <div>
-                        <span class="ambientes">Departamento de 3 ambientes</span>
-                        <span class="area">82m <sup>2</sup> </span>
-                    </div>
-                    <div class="direccion">
-                        <span> Demaría 4676 - Palermo </span>
-                    </div>
-                    <div class="precio">
-                        <span> USD 120.000 </span>
-                    </div>
-                </article>
-        
-                <article class="propiedades-grilla-carta">
-                    <a href="#">
-                        <img src="../media/departamento-02.jpg" alt="Imagen de la propiedad">
-                    </a>
-                    <div>
-                        <span class="ambientes">Departamento de 3 ambientes</span>
-                        <span class="area">82m <sup>2</sup> </span>
-                    </div>
-                    <div class="direccion">
-                        <span> Demaría 4676 - Palermo </span>
-                    </div>
-                    <div class="precio">
-                        <span> USD 120.000 </span>
-                    </div>
-                </article>
-        
-                <article class="propiedades-grilla-carta">
-                    <a href="#">
-                        <img src="../media/departamento-03.jpg" alt="Imagen de la propiedad">
-                    </a>
-                    <div>
-                        <span class="ambientes">Departamento de 3 ambientes</span>
-                        <span class="area">82m <sup>2</sup> </span>
-                    </div>
-                    <div class="direccion">
-                        <span> Demaría 4676 - Palermo </span>
-                    </div>
-                    <div class="precio">
-                        <span> USD 120.000 </span>
-                    </div>
-                </article>
-            </div>
-        </div> 
     </section>
 
     <!--Pie de pagina-->
@@ -296,5 +267,7 @@
 
         <span id="copyright">© 2022 Caliz&Sasha BIENES RAICES.</span>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

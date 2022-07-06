@@ -140,33 +140,22 @@ nav a{
     display: inline;
     margin: 20px;
 }
-#menu-responsive-botton{
-    display: none;
-}
 
 /* Carrousel */
-.carrousel-image{
+.carousel-item{
     width: 100%;
-    height: 680px;
+    height: auto;
 }
 
-.carrousel-image img{
-    width: 100%;
-    max-height: 100%;
-}
 
 /* Buscador de propiedades */
 #browser {
     background-color: #5C5552;
     border-top: 2px solid #2F2523;
+    padding: 30px;
 }
 #browser form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.dropdown-menu{
-     margin: 30px;
+    width: 100%;
 }
 
 /* Slogan de la empresa */
@@ -196,40 +185,18 @@ nav a{
     font-weight: bold;
     margin: 30px;
 }
-.propiedades-content{
+.propiedad{
     display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
-.propiedades-grilla{
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-}
-.propiedades-grilla-carta img{
-    width: 90%;
-    position: relative;
-    transition: transform 1s;
-    transition-delay: 1.25s;
-}
-/*Transiciones*/
-.propiedades-grilla-carta img:hover{
-    transform: scale(1.5);
-    z-index: 2;
-}
-.propiedades-grilla-carta img:not(:hover){
-    transition: transform 0.25s;
-    transition-delay: 0s;
-}
-
-.menu-lateral{
-    width: 15%;
+.lateral-menu{
     background-color: #E5D7C7;
-    padding: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
 }
-.menu-lateral form{
-    display: flex;
-    flex-direction: column;
-}
-#menu-lateral-responsive-botton{
-    display: none;
+#lateral-menu-submit{
+    margin-top: 10px;
 }
 
 /* Emprendimientos */
@@ -455,6 +422,9 @@ footer a {
 }
 
 
+
+
+
 @media screen and (max-width: 1023px){
 
     /*---------HEADER---------*/
@@ -483,50 +453,15 @@ footer a {
     #header-media img{
         margin: 0px;
     }
-    /*---------MENU--------*/
-    nav{
-        display: none;
-    }
-    #menu-responsive-botton{
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-color: #E5D7C7;
-        position: absolute;
-        top: 100px;
-        left: 10px;
-        border: 2px solid black;
-        border-radius: 10px;
-    }
-    #menu-responsive-botton img{
-        width: 50px;
-    }
     /*-----------CARROUSEL-----------*/
     .carrousel-image{
         height: auto;
     }
-    /*----------BROWSER-----------*/
-    #browser form{
-        display: grid;
-        grid-template-columns: 30% 40% auto;
-        grid-template-rows: 50px 80px;
-        grid-template-areas: "input input input" "dropdown1 dropdown2 submit";
+    /*------------BROWSER-----------*/
+    .browser-searcher{
+        margin-bottom: 20px;
     }
-    .dropdown-menu{
-        margin: 0px;
-    }
-    #browser-input{
-        grid-area: input;
-    }
-    #browser-dropdown1{
-        grid-area: dropdown1;
-    }
-    #browser-dropdown2{
-        grid-area: dropdown2;
-    }
-    #browser-submit{
-        grid-area: submit;
-    }
+
     /*--------SLOGAN---------*/
     #slogan h1{
         font-size: 20px;
