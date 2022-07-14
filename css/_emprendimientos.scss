@@ -1,0 +1,41 @@
+/*-------------------------- Emprendimientos --------------------------------*/
+.emprendimientos-slogan{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    height: 220px;
+
+    div{
+        background-color: #E5D7C7;
+        width: 70%;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+}
+
+.emprendimientos-slogan1{
+    border-radius: 0 10px 40px 0;
+}
+.emprendimientos-slogan2{
+    border-radius: 10px 0 0 40px;
+    position: relative;
+    float: right;
+}
+.emprendimientos{
+    width: 100%;
+    margin-top: 150px;
+}
+.card-img-cont{
+    background-color: #8b8b8a;
+    display: flex;
+    align-items: center;
+}
+.emprendimientos-card {
+    img{
+        object-fit: contain;
+    }
+    .card-body{
+        height: 100%;
+    }
+}

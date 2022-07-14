@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -12,503 +12,500 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*--------------------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
-
-body{
-    background-color: #F7F0F5;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*--------------------- Header -----------------------------*/
-header{
-    background-color: #E5D7C7;  
-    display: grid;
-    grid-template-columns: 50% auto auto;
-    border-bottom: 1.5px solid black;
-    font-family: 'Roboto', sans-serif;
+header {
+  background-color: #E5D7C7;
+  display: grid;
+  grid-template-columns: 50% auto auto;
+  border-bottom: 1.5px solid #2F2523;
+  font-family: "Roboto", sans-serif;
 }
 header a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-/* Icono y nombre de la empresa */
-#header-icon{
-    display: flex;
-    align-items: flex-end;
+#header-icon {
+  display: flex;
+  align-items: flex-end;
 }
 
-#header-logo{
-    width: 100px;
+#header-logo {
+  width: 100px;
 }
 
-#header-company-name:hover{
-    animation: header-name-bounce 2s linear 0s infinite;
+#header-company-name:hover {
+  -webkit-animation: header-name-bounce 2s linear 0s infinite;
+          animation: header-name-bounce 2s linear 0s infinite;
+}
+#header-company-name h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2.5px solid #2F2523;
+}
+#header-company-name h1 span {
+  color: #AC7277;
+}
+#header-company-name h2 {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 3px;
 }
 
-#header-company-name h1{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 2.5px solid black;
+#header-contact {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+#header-contact img {
+  width: 25px;
 }
 
-#header-company-name h1 span{
-    color: #AC7277;
+#header-media {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
 }
-
-#header-company-name h2{
-    font-size: 15px;
-    text-align: center;
-    margin-top: 3px;
+#header-media img {
+  width: 35px;
+  margin-left: 20px;
 }
-
-/* Numero de telefono y direccion de correo */
-#header-contact{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-}
-
-#header-contact img{
-    width: 25px;
-}
-
-/* Redes sociales */
-#header-media{
-    display: flex;
-    margin-right: 50px;
-    align-items: center;
-}
-#header-media img{
-    width: 35px;
-    margin-left: 20px;
-}
-.social-media img:hover{
-    animation: bounce 2s linear 0s infinite;
+#header-media img:hover {
+  -webkit-animation: bounce 2s linear 0s infinite;
+          animation: bounce 2s linear 0s infinite;
 }
 
 /*---------------------- Menu superior -------------------------*/
-nav{
-    background-color: #E5D7C7;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding: 20px;
-   
+nav {
+  background-color: #E5D7C7;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 20px;
 }
-nav a{
-    text-decoration: none;
-    color: black;
+nav a {
+  text-decoration: none;
+  color: black;
 }
-.menu li{
-    display: inline;
-    margin: 20px;
+nav li {
+  display: inline;
 }
 
 /*--------------- Carrousel -------------------*/
-.carousel-item{
-    width: 100%;
-    height: auto;
+.carousel-item {
+  width: 100%;
+  height: auto;
 }
-
 
 /*----------------------- Buscador de propiedades -------------------*/
 #browser {
-    background-color: #5C5552;
-    border-top: 2px solid #2F2523;
-    padding: 30px;
+  background-color: #5C5552;
+  border-top: 2px solid #2F2523;
+  padding: 30px;
 }
-#browser form{
-    width: 100%;
+#browser form {
+  width: 100%;
 }
 
 /*---------------- Slogan de la empresa ---------------------*/
-#slogan{
-    background-color: #2F2523;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding: 30px;
+#slogan {
+  background-color: #2F2523;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 30px;
 }
-#slogan h1{
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
+#slogan h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-#slogan h2{
-    font-size: 20px;
+#slogan h2 {
+  font-size: 20px;
 }
 
 /*-------------------- Propiedades -------------------*/
-.propiedades{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+.propiedades {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
-.propiedades h1{
-    font-size: 28px;
-    font-weight: bold;
-    margin: 30px;
+.propiedades h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px;
 }
-.propiedad{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.lateral-menu{
-    background-color: #E5D7C7;
-    padding: 10px;
-    margin-bottom: 30px;
-}
-#lateral-menu-submit{
-    margin-top: 10px;
-}
-/*Propiedades de bootstrap*/
-.btn{
-    background-color: #E5D7C7 !important;
-    color: #5C5552 !important;
-    border-color: #5C5552 !important;
-    transition: filter 0.25s !important;
-}
-.btn:hover{
-    filter: brightness(0.65);
-}
-.card-img-top{
-    border: 2px solid #2F2523;
-    border-bottom: 1px solid #2F2523;
-}
-.card-body{
-    background-color: #F7F0F5;
+.propiedades .propiedad {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
+.lateral-menu {
+  background-color: #E5D7C7;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.lateral-menu #lateral-menu-submit {
+  margin-top: 10px;
+}
+
+/*Propiedades de bootstrap*/
+.btn {
+  background-color: #E5D7C7 !important;
+  color: #5C5552 !important;
+  border-color: #5C5552 !important;
+  transition: filter 0.25s !important;
+}
+.btn:hover {
+  filter: brightness(0.65);
+}
+
+.card-img-top {
+  border: 2px solid #2F2523;
+  border-bottom: 1px solid #2F2523;
+}
+
+.card-body {
+  background-color: #F7F0F5;
+}
 
 /*-------------------------- Emprendimientos --------------------------------*/
-.emprendimientos-slogan{
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    height: 220px;
+.emprendimientos-slogan {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  height: 220px;
 }
-.emprendimientos-slogan div{
-    background-color: #E5D7C7;
-    width: 70%;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+.emprendimientos-slogan div {
+  background-color: #E5D7C7;
+  width: 70%;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
-.emprendimientos-slogan1{
-    border-radius: 0 10px 40px 0;
+
+.emprendimientos-slogan1 {
+  border-radius: 0 10px 40px 0;
 }
-.emprendimientos-slogan2{
-    border-radius: 10px 0 0 40px;
-    position: relative;
-    float: right;
+
+.emprendimientos-slogan2 {
+  border-radius: 10px 0 0 40px;
+  position: relative;
+  float: right;
 }
-.emprendimientos{
-    width: 100%;
-    margin-top: 150px;
+
+.emprendimientos {
+  width: 100%;
+  margin-top: 150px;
 }
-.card-img-cont{
-    background-color: #8b8b8a;
-    display: flex;
-    align-items: center;
+
+.card-img-cont {
+  background-color: #8b8b8a;
+  display: flex;
+  align-items: center;
 }
-.emprendimientos-card img{
-    object-fit: contain;
+
+.emprendimientos-card img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.emprendimientos-card .card-body{
-    height: 100%;
+.emprendimientos-card .card-body {
+  height: 100%;
 }
+
 /*-------------------------- Nosotros ----------------------------*/
-.nosotros{
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.nosotros {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.nosotros-text1{
-    background-color: #E5D7C7;
-    width: 70%;
-    padding: 40px;
-    border-radius: 0 20px 50px 0;
-    text-align: center;
-    margin-top: 30px;
-    align-self: flex-start;
+.nosotros img {
+  margin-top: 30px;
+  width: 70%;
 }
-.nosotros img{
-    margin-top: 30px;
-    width: 70%;
+.nosotros h1 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-.nosotros-text2{
-    background-color: #E5D7C7;
-    padding: 30px;
-    text-align: center;
-    width: 80%;
-    margin-top: 30px;
-    border-radius: 10px;
-}
-.nosotros h1{
-    font-size: 19px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-#nosotros-cont{
-    display: flex;
-    column-gap: 30px;
-    justify-content: center;
-}
-.nosotros-servicios{
-    background-color: #E5D7C7;
-    width: 15%;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-.nosotros-servicios ul{
-    margin-top: 30px;
-    text-align: justify;
-    list-style-type: "-";
-
-}
-.nosotros iframe{
-    margin-top: 30px;
+.nosotros iframe {
+  margin-top: 30px;
 }
 
-/*-------------------------------- Contacto ------------------------------*/
-.contacto-formulario{
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
+.nosotros-text1 {
+  background-color: #E5D7C7;
+  width: 70%;
+  padding: 40px;
+  border-radius: 0 20px 50px 0;
+  text-align: center;
+  margin-top: 30px;
+  align-self: flex-start;
 }
-.contacto-formulario h1{
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #E5D7C7;
-    text-align: center;
-    padding: 15px;
-    width: 50%;
-    border-radius: 20px;
+
+.nosotros-text2 {
+  background-color: #E5D7C7;
+  padding: 30px;
+  text-align: center;
+  width: 80%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+#nosotros-cont {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: center;
+}
+
+.nosotros-servicios {
+  background-color: #E5D7C7;
+  width: 15%;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+.nosotros-servicios ul {
+  margin-top: 30px;
+  text-align: justify;
+  list-style-type: "-";
 }
 
 /*------------------------- Footer ---------------------------------*/
-
-footer{
-    background-color: #2F2523;
-    color: #F7F0F5;
-    font-family: 'Roboto', sans-serif;
-    padding: 40px 20px 0 20px;
-    margin-top: 20px;
+footer {
+  background-color: #2F2523;
+  color: #F7F0F5;
+  font-family: "Roboto", sans-serif;
+  padding: 40px 20px 0 20px;
+  margin-top: 10px;
 }
-
 footer a {
-    text-decoration: none;
-    color: #F7F0F5;
+  text-decoration: none;
+  color: #F7F0F5;
 }
-#footer-logo{
-    width: 100%;
-    filter: drop-shadow(11px 11px 4px rgba(208, 208, 208, 0.25));
+
+#footer-logo {
+  width: 100%;
+  filter: drop-shadow(11px 11px 4px rgba(208, 208, 208, 0.25));
 }
-#footer-media{
-    padding: 0px;
-    text-align: center;
+
+#footer-media {
+  padding: 0px;
+  text-align: center;
 }
-#footer-media img{
-    width: 50px;
-    margin: 10px;
-    filter: drop-shadow(5px 5px 4px rgba(208, 208, 208, 0.25));
+#footer-media img {
+  width: 50px;
+  margin: 10px;
+  filter: drop-shadow(5px 5px 4px rgba(208, 208, 208, 0.25));
 }
-#footer-menu{
-    text-align: center;
+
+#footer-menu {
+  text-align: center;
 }
-#footer-menu ul{
-    padding: 0px;
+#footer-menu ul {
+  padding: 0px;
 }
-#copyright{
-    border-top: 1px solid white;
+
+#copyright {
+  border-top: 1px solid white;
+}
+
+body {
+  background-color: #F7F0F5;
+}
+
+/*-------------------------------- Contacto ------------------------------*/
+.contacto-formulario {
+  font-family: "Roboto", sans-serif;
+  margin: 20px;
+}
+.contacto-formulario h1 {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #E5D7C7;
+  text-align: center;
+  padding: 15px;
+  width: 50%;
+  border-radius: 20px;
 }
 
 /*--------------ANIMACIONES-------------*/
+@-webkit-keyframes bounce {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, -10px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 @keyframes bounce {
-    0%{
-        transform: translate(0px, 0px);
-    }
-    25%{
-        transform: translate(0px, -10px);
-    }
-    50%{
-        transform: translate(0px, 0px);
-    }
-    75%{
-        transform: translate(0px, 10px);
-    }
-    100%{
-        transform: translate(0px, 0px);
-    }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, -10px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-webkit-keyframes header-name-bounce {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, -10px);
+  }
+  50% {
+    transform: translate(0px, -20px);
+  }
+  75% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 @keyframes header-name-bounce {
-    0%{
-        transform: translate(0px, 0px);
-    }
-    25%{
-        transform: translate(0px, -10px);
-    }
-    50%{
-        transform: translate(0px, -20px);
-    }
-    75%{
-        transform: translate(0px, -10px);
-    }
-    100%{
-        transform: translate(0px, 0px);
-    }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, -10px);
+  }
+  50% {
+    transform: translate(0px, -20px);
+  }
+  75% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
-
-
-
-
-
-@media screen and (max-width: 1023px){
-
-    /*---------HEADER---------*/
-    #header-icon{
-        margin: 10px 0 10px 10px;
-    }
-    #header-icon img{
-        width: 40%;
-    }
-    #header-icon h1{
-        font-size: 25px;
-    }
-    #header-icon h2{
-        display: none;
-    }
-    #header-contact{
-        display: none;
-    }
-    #header-contact img{
-        width: 15px;
-    }
-    #header-media{
-        display: none;
-        margin-right: 0px;
-    }
-    #header-media img{
-        margin: 0px;
-    }
-    /*-----------CARROUSEL-----------*/
-    .carrousel-image{
-        height: auto;
-    }
-    /*------------BROWSER-----------*/
-    .browser-searcher{
-        margin-bottom: 20px;
-    }
-
-    /*--------SLOGAN---------*/
-    #slogan h1{
-        font-size: 20px;
-    }
-    #slogan h2{
-        font-size: 15px;
-    }
-
-    /*-----PROPIEDADES DESTACADAS--------*/
-    .propiedades h1{
-        font-size: 20px;
-    }
-    .propiedades-grilla{
-        grid-template-columns: 1fr;
-    }
-    .menu-lateral{
-        display: none;
-    }
-    #menu-lateral-responsive-botton{
-        display: inline-block;
-        font-size: 16px;
-        font-weight: bold;
-        background-color: #E5D7C7;
-        padding: 5px 10px 5px 10px;
-        border-radius: 10px;
-        border: 1px solid black;
-        margin: 15px;
-    }
-
-    /*------EMPRENDIMIENTOS--------*/
-    .emprendimientos-slogan{
-        font-size: 17px;
-        margin-top: 75px;
-    }
-    .emprendimientos-tarjeta{
-        flex-direction: column;
-    }
-    .emprendimientos-tarjeta-imagen-cont{
-        width: 90%;
-    }
-    .emprendimientos-tarjeta-tags{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px 10px;
-    }
-    .emprendimientos-tarjeta-texto span{
-        margin: 0px;
-        text-align: center;
-        
-    }
-    /*------NOSOTROS---------*/
-    .nosotros img{
-        width: 100%;
-    }
-    #nosotros-cont{
-        flex-direction: column;
-        align-items: center;
-    }
-    .nosotros-servicios{
-        width: 90%;
-        padding: 10px;
-        margin-top: 30px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .nosotros iframe{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-
-}
+@media screen and (max-width: 1023px) {
+  /*---------HEADER---------*/
+  #header-icon {
+    margin: 10px 0 10px 10px;
+  }
+  #header-icon img {
+    width: 40%;
+  }
+  #header-icon h1 {
+    font-size: 25px;
+  }
+  #header-icon h2 {
+    display: none;
+  }
+  #header-contact {
+    display: none;
+  }
+  #header-contact img {
+    width: 15px;
+  }
+  #header-media {
+    display: none;
+    margin-right: 0px;
+  }
+  #header-media img {
+    margin: 0px;
+  }
+  /*------------BROWSER-----------*/
+  .browser-searcher {
+    margin-bottom: 20px;
+  }
+  /*--------SLOGAN---------*/
+  #slogan h1 {
+    font-size: 20px;
+  }
+  #slogan h2 {
+    font-size: 15px;
+  }
+  /*-----PROPIEDADES DESTACADAS--------*/
+  .propiedades h1 {
+    font-size: 20px;
+  }
+  /*------EMPRENDIMIENTOS--------*/
+  .emprendimientos-slogan {
+    font-size: 17px;
+    margin-top: 75px;
+  }
+  /*------NOSOTROS---------*/
+  .nosotros img {
+    width: 100%;
+  }
+  #nosotros-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros-servicios {
+    width: 90%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros iframe {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

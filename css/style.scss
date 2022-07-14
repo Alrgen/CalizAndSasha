@@ -1,0 +1,144 @@
+$font: 'Roboto', sans-serif;
+$base-color: #E5D7C7;
+$contrast-color: #5C5552;
+$dark-color: #2F2523;
+$light-color:  #F7F0F5;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+@import 'reset';
+@import 'header';
+@import 'index';
+@import 'propiedades';
+@import 'emprendimientos';
+@import 'nosotros';
+@import 'footer';
+
+body{
+    background-color: $light-color;
+}
+
+/*-------------------------------- Contacto ------------------------------*/
+.contacto-formulario{
+    font-family: $font;
+    margin: 20px;
+
+    h1{
+        font-size: 20px;
+        font-weight: bold;
+        background-color: $base-color;
+        text-align: center;
+        padding: 15px;
+        width: 50%;
+        border-radius: 20px;
+    }
+}
+
+/*--------------ANIMACIONES-------------*/
+@keyframes bounce {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(0px, -10px);
+    }
+    50%{
+        transform: translate(0px, 0px);
+    }
+    75%{
+        transform: translate(0px, 10px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes header-name-bounce {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(0px, -10px);
+    }
+    50%{
+        transform: translate(0px, -20px);
+    }
+    75%{
+        transform: translate(0px, -10px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@media screen and (max-width: 1023px){
+
+    /*---------HEADER---------*/
+    #header-icon{
+        margin: 10px 0 10px 10px;
+    }
+    #header-icon img{
+        width: 40%;
+    }
+    #header-icon h1{
+        font-size: 25px;
+    }
+    #header-icon h2{
+        display: none;
+    }
+    #header-contact{
+        display: none;
+    }
+    #header-contact img{
+        width: 15px;
+    }
+    #header-media{
+        display: none;
+        margin-right: 0px;
+    }
+    #header-media img{
+        margin: 0px;
+    }
+    /*------------BROWSER-----------*/
+    .browser-searcher{
+        margin-bottom: 20px;
+    }
+
+    /*--------SLOGAN---------*/
+    #slogan h1{
+        font-size: 20px;
+    }
+    #slogan h2{
+        font-size: 15px;
+    }
+
+    /*-----PROPIEDADES DESTACADAS--------*/
+    .propiedades h1{
+        font-size: 20px;
+    }
+
+    /*------EMPRENDIMIENTOS--------*/
+    .emprendimientos-slogan{
+        font-size: 17px;
+        margin-top: 75px;
+    }
+    /*------NOSOTROS---------*/
+    .nosotros img{
+        width: 100%;
+    }
+    #nosotros-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros-servicios{
+        width: 90%;
+        padding: 10px;
+        margin-top: 30px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros iframe{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

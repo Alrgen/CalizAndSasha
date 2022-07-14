@@ -1,0 +1,45 @@
+/*-------------------- Propiedades -------------------*/
+.propiedades{
+    text-align: center;
+    font-family: $font;
+
+    h1{
+        font-size: 28px;
+        font-weight: bold;
+        margin: 30px;
+    }
+
+    .propiedad{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+.lateral-menu{
+    background-color: $base-color;
+    padding: 10px;
+    margin-bottom: 30px;
+
+    #lateral-menu-submit{
+        margin-top: 10px;
+    }
+}
+
+/*Propiedades de bootstrap*/
+.btn{
+    background-color: $base-color !important;
+    color: $contrast-color !important;
+    border-color: $contrast-color !important;
+    transition: filter 0.25s !important;
+
+    &:hover{
+        filter: brightness(0.65);
+    }
+}
+.card-img-top{
+    border: 2px solid $dark-color;
+    border-bottom: 1px solid $dark-color;
+}
+.card-body{
+    background-color: $light-color;
+}

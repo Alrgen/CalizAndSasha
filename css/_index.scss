@@ -1,0 +1,35 @@
+/*--------------- Carrousel -------------------*/
+.carousel-item{
+    width: 100%;
+    height: auto;
+}
+
+/*----------------------- Buscador de propiedades -------------------*/
+#browser {
+    background-color: $contrast-color;
+    border-top: 2px solid $dark-color;
+    padding: 30px;
+
+    form{
+        width: 100%;
+    }
+}
+
+/*---------------- Slogan de la empresa ---------------------*/
+#slogan{
+    background-color: $dark-color;
+    color: white;
+    font-family: $font;
+    text-align: center;
+    padding: 30px;
+
+    h1{
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}

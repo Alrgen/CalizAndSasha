@@ -1,0 +1,37 @@
+/*------------------------- Footer ---------------------------------*/
+footer{
+    background-color: $dark-color;
+    color: $light-color;
+    font-family: $font;
+    padding: 40px 20px 0 20px;
+    margin-top: 10px;
+
+    a {
+        text-decoration: none;
+        color: $light-color;
+    }
+}
+#footer-logo{
+    width: 100%;
+    filter: drop-shadow(11px 11px 4px rgba(208, 208, 208, 0.25));
+}
+#footer-media{
+    padding: 0px;
+    text-align: center;
+
+    img{
+        width: 50px;
+        margin: 10px;
+        filter: drop-shadow(5px 5px 4px rgba(208, 208, 208, 0.25));
+    }
+}
+#footer-menu{
+    text-align: center;
+
+    ul{
+        padding: 0px;
+    }
+}
+#copyright{
+    border-top: 1px solid white;
+}

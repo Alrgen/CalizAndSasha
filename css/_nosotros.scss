@@ -1,0 +1,61 @@
+/*-------------------------- Nosotros ----------------------------*/
+.nosotros{
+    font-family: $font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        margin-top: 30px;
+        width: 70%;
+    }
+
+    h1{
+        font-size: 19px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    iframe{
+        margin-top: 30px;
+    }
+}
+.nosotros-text1{
+    background-color: $base-color;
+    width: 70%;
+    padding: 40px;
+    border-radius: 0 20px 50px 0;
+    text-align: center;
+    margin-top: 30px;
+    align-self: flex-start;
+}
+
+.nosotros-text2{
+    background-color: $base-color;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#nosotros-cont{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+
+.nosotros-servicios{
+    background-color: $base-color;
+    width: 15%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+
+    ul{
+        margin-top: 30px;
+        text-align: justify;
+        list-style-type: "-";
+    }
+}
