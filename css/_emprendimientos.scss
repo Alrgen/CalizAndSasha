@@ -17,10 +17,15 @@
 .emprendimientos-slogan1{
     border-radius: 0 10px 40px 0;
 }
-.emprendimientos-slogan2{
-    border-radius: 10px 0 0 40px;
+
+@mixin float-right {
     position: relative;
     float: right;
+}
+
+.emprendimientos-slogan2{
+    border-radius: 10px 0 0 40px;
+    @include float-right;
 }
 .emprendimientos{
     width: 100%;
